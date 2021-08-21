@@ -11,3 +11,11 @@ h1 {
 	font-family: "Palatino Linotype", "Book Antiqua", serif;
 	font-size: 250%;
 }
+h2 {
+	font-family: LinjaPona, sans-serif;
+	font-size: 300%;
+}
+@font-face {
+	font-family: LinjaPona;
+	src: url(linja-pona-4.9.otf);
+}

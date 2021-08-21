@@ -30,7 +30,7 @@ function onNewWord() {
 function setNewWord() {
 	generated_word = generateValidWord()//.toTitleCase()
 	generated_cartouche = generateCartoucheFromWord(generated_word)
-	current_word = chooseRandom(honorifics) + " " + generated_word + " " + generated_cartouche
+	current_word = chooseRandom(honorifics) + " " + generated_cartouche
 	//alert(current_word)
 	document.getElementById("word_display").innerHTML = current_word
 }
@@ -56,7 +56,7 @@ function generateValidWord() {
 }
 
 function generateCartoucheFromWord(word) {
-	cartouche = "["
+	cartouche = "[_"
 	for (i = 0; i < word.length; i++) {
 		cartouche += chooseRandom(cartouche_dictionary[word[i]]) + "_"
 	}
