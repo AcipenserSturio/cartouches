@@ -2,17 +2,6 @@ body {
 	font-family: Verdana, "Lucida Sans Unicode", sans-serif;
 	text-align: center;
 }
-
-#colour {
-	width: 45%;
-	height: 25%;
-	margin: auto;
-	border-radius: 50%;
-}
-table {
-	border-collapse: collapse;
-	margin: auto;
-}
 input {
 	text-align: center;
 	font-size: 100%;
