@@ -7,10 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body onload="setNewWord()">
-		<h1 id="headline">Here's a name I just generated:</h1>
+		<h1 id="headline">Transcribe:</h1>
 		<h2 id="word_display"></h2>
 		<br>
-		<input id="word" onchange="onNewWord()"></input>
+		<input id="word" onkeyup="userEntersSomething()"></input>
 		<br><br>
 		<div id="entries">
 		</div>
