@@ -32,6 +32,7 @@ function userEntersSomething() {
 	word = document.getElementById("word").value
 	//console.log(word)
 	if (word == current_word) {
+		addEntry(current_word)
 		onNewWord()
 	}
 }
@@ -76,4 +77,12 @@ function generateCartoucheFromWord(word) {
 	cartouche = cartouche.slice(0, -1)
 	cartouche += "]"
 	return cartouche
+}
+
+function addEntry(word) {
+	entries = document.getElementById("entries")
+	paragraph = document.createElement("p")
+	text = document.createTextNode(word)
+	paragraph.appendChild(text)
+	entries.prepend(paragraph)
 }
